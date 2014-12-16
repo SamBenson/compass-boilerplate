@@ -8,7 +8,7 @@ end
 
 require 'find'
 if Find.find(Dir.pwd).detect{|dir|dir=~/.+\.(css|js|html?|php|inc)$/}
-  guard 'livereload' do
+  guard 'livereload', port: '35730' do
     watch(%r{.+\.(css|js|html?|php|inc)$})
   end
 end
