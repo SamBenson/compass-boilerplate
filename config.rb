@@ -7,9 +7,7 @@ javascripts_dir = "js"
 if environment == :development 
 	output_style = :expanded
 	line_comments = true
-
 elsif environment == :production
 	output_style = :compressed
 	line_comments = false
-
 end
